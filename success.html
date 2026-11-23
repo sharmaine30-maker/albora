@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alborá - Your Order</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="success.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Your order</h1>
+        <a href="index.html" class="close-btn">✖</a>
+    </div>
+
+    <div class="order-container">
+        
+        <div class="order-id-label">ORDER</div>
+        <div class="order-id" id="displayOrderId">ALB-000000</div>
+        <div class="status-badge">Product payment under review</div>
+
+        <div class="card">
+            <h3>Your order link</h3>
+            <p class="albora-inline-25d5252bcff5">Keep this order-specific link to reopen this confirmation in this browser. This prototype does not accept shipping payments or provide tracking.</p>
+            <div class="link-box">
+                <input type="text" id="orderLinkInput" readonly>
+                <button data-albora-event-id="success-event-1" data-albora-event-type="click">COPY</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <ul class="timeline">
+                <li class="active">
+                    <h4>Product payment</h4>
+                    <p>Under review</p>
+                </li>
+                <li>
+                    <h4>J&T shipping fee</h4>
+                    <p>Added after your product payment is verified</p>
+                </li>
+                <li>
+                    <h4>Shipping payment</h4>
+                    <p>After the shipping fee is ready</p>
+                </li>
+                <li>
+                    <h4>Confirmed / Ready to Ship</h4>
+                </li>
+                <li>
+                    <h4>J&T tracking number</h4>
+                    <p>Appears here once your parcel is booked</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Items</h3>
+            <div id="displayItems"></div>
+            
+            <div class="item-row albora-inline-8c3eef15300a">
+                <span>Product subtotal</span>
+                <span id="displaySubtotal">₱0</span>
+            </div>
+            <div class="item-row albora-inline-0a92a0ae3d11">
+                <span>J&T shipping fee</span>
+                <span>To be confirmed</span>
+            </div>
+            
+            <div class="total-row">
+                <span>Total</span>
+                <span id="displayTotal">₱0 so far</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Product payment</h3>
+            <div class="info-row">
+                <span>Method</span>
+                <span id="displayMethod">GCash</span>
+            </div>
+            <div class="info-row">
+                <span>Reference no.</span>
+                <span id="displayRef">N/A</span>
+            </div>
+            <div class="info-row">
+                <span>Status</span>
+                <span class="status-text">Under review</span>
+            </div>
+            
+            <!-- Screenshot ng binayaran -->
+            <div class="proof-img" role="img" aria-label="IMAGE PLACEHOLDER">IMAGE PLACEHOLDER</div>
+        </div>
+
+        <div class="card delivery-info">
+            <h3>Deliver to</h3>
+            <p><strong id="displayName">Full Name</strong></p>
+            <p id="displayAddress">Address here</p>
+            <p id="displayPhone">09XX XXX XXXX</p>
+        </div>
+
+        <div class="card">
+            <h3>Receipt</h3>
+            <p class="albora-inline-37a58456de3d">No payment or digital receipt is processed by this frontend-only prototype.</p>
+        </div>
+
+        <nav class="success-actions" aria-label="Order next steps">
+            <a class="success-action success-action-primary" href="orders.html">Go to My Orders</a>
+            <a class="success-action success-action-secondary" href="index.html#collection">Continue Shopping</a>
+        </nav>
+
+    </div>
+
+    <script src="inline-events.js"></script>
+    <script src="success.js"></script>
+</body>
+</html>

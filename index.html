@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Alborá</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <div class="top-bar">Pay with GCash or Maribank &nbsp;·&nbsp; Shipped with J&T Express</div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a class="nav-link" href="index.html">Shop</a>
+                <a class="nav-link" href="alboramen.html">Alborá Men</a>
+                <a class="nav-link" href="help.html">Help</a>
+            </div>
+            <div class="brand-logo-container">
+                <a href="index.html"><img src="logo.png" alt="ALBORÁ" class="brand-logo-img"></a>
+            </div>
+            <div class="nav-right">
+                <a href="bag.html" class="bag-btn">BAG <span class="bag-badge">0</span></a>
+                <button class="hamburger-btn" data-albora-event-id="home-event-4" data-albora-event-type="click"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Shop</a>
+           <a href="alboramen.html">Alborá Men</a>
+            <a href="help.html">Help</a>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-image-placeholder" role="img" aria-label="Hero image placeholder">
+            <span>IMAGE PLACEHOLDER</span>
+        </div>
+        <div class="hero-content-wrapper">
+            <div class="content-box">
+                <div class="eyebrow-wrapper">
+                    <span class="eyebrow">THE ART OF GIVING</span>
+                    <div class="eyebrow-line"></div>
+                </div>
+                <h1 class="hero-title">Small luxuries,<br><em>beautifully</em><br>given.</h1>
+                <p class="hero-text">Discover thoughtfully selected pieces for life's special moments.</p>
+                <a href="#collection" class="btn-shop">
+                    EXPLORE ALBORÁ <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-section" id="find-albora">
+        <div class="container-fluid px-2">
+            <div class="category-header">
+                <span class="eyebrow-dark">SHOP BY CATEGORY</span>
+                <h2 class="category-title">Find your Alborá</h2>
+            </div>
+            <div class="row g-2">
+                <div class="col-12 col-md-4 col-lg">
+                    <div class="category-card">
+                        <div class="card-image-wrapper"></div>
+                        <div class="card-footer-info"><span class="cat-name">JEWELRY</span><span class="cat-count"></span></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg">
+                    <div class="category-card">
+                        <div class="card-image-wrapper"></div>
+                        <div class="card-footer-info"><span class="cat-name">ACCESSORIES</span><span class="cat-count"></span></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg">
+                    <div class="category-card">
+                        <div class="card-image-wrapper"></div>
+                        <div class="card-footer-info"><span class="cat-name">PERFUME</span><span class="cat-count"></span></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg">
+                    <div class="category-card">
+                        <div class="card-image-wrapper"></div>
+                        <div class="card-footer-info"><span class="cat-name">FLOWERS</span><span class="cat-count"></span></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg">
+                    <div class="category-card">
+                        <div class="card-image-wrapper"></div>
+                        <div class="card-footer-info"><span class="cat-name">COSMETICS</span><span class="cat-count"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gift-studio-section">
+        <div class="studio-box">
+            <div class="studio-content">
+                <span class="eyebrow-dark">PERFUME · JEWELRY · COSMETICS · ACCESSORIES</span>
+                <h2 class="studio-title">Alborá Gift Studio</h2>
+                <p class="studio-text">Choose a gift bag or box, drag in your favorite pieces, add a dry flower letter and watch your gift set come together.</p>
+            </div>
+            <div class="studio-action"><a href="gift-studio.html" class="btn-studio">CREATE YOUR GIFT SET</a></div>
+        </div>
+    </section>
+
+    <section class="category-section albora-inline-955f05a7c2ef" id="bestsellers">
+        <div class="category-header albora-inline-4e95b5ce6430">
+            <span class="eyebrow-dark">FEATURED</span>
+            <h2 class="category-title">Featured Products</h2>
+        </div>
+        <div class="container-fluid px-2">
+            <div class="slider-wrapper">
+                <!-- ARROWS -->
+                <button class="slider-arrow prev" id="prevSlide" aria-label="Previous slide"><i class="bi bi-chevron-left"></i></button>
+                <button class="slider-arrow next" id="nextSlide" aria-label="Next slide"><i class="bi bi-chevron-right"></i></button>
+
+                <div class="slider-container" id="slider">
+                    <div class="slide" data-product-name="Demo Necklace">
+                        <div class="slide-art">IMAGE PLACEHOLDER</div>
+                        <div class="slide-info">
+                            <span class="cc-cat">Jewelry</span>
+                            <h3 class="cc-name">Demo Necklace</h3>
+                            <p class="cc-desc">Demo item only; not for sale.</p>
+                            <div class="cc-price">₱100</div>
+                            <button type="button" class="slide-add-btn" disabled aria-label="View Demo Necklace details">+</button>
+                        </div>
+                    </div>
+                    <div class="slide" data-product-name="Demo Perfume">
+                        <div class="slide-art">IMAGE PLACEHOLDER</div>
+                        <div class="slide-info">
+                            <span class="cc-cat">Perfume</span>
+                            <h3 class="cc-name">Demo Perfume</h3>
+                            <p class="cc-desc">Demo item only; not for sale.</p>
+                            <div class="cc-price">From ₱100</div>
+                            <button type="button" class="slide-add-btn" disabled aria-label="View Demo Perfume details">+</button>
+                        </div>
+                    </div>
+                    <div class="slide" data-product-name="Demo Cosmetics">
+                        <div class="slide-art">IMAGE PLACEHOLDER</div>
+                        <div class="slide-info">
+                            <span class="cc-cat">Cosmetics</span>
+                            <h3 class="cc-name">Demo Cosmetics</h3>
+                            <p class="cc-desc">Demo item only; not for sale.</p>
+                            <div class="cc-price">₱100</div>
+                            <button type="button" class="slide-add-btn" disabled aria-label="View Demo Cosmetics details">+</button>
+                        </div>
+                    </div>
+                    <div class="slide" data-product-name="Demo Flower Bouquet">
+                        <div class="slide-art">IMAGE PLACEHOLDER</div>
+                        <div class="slide-info">
+                            <span class="cc-cat">Flowers</span>
+                            <h3 class="cc-name">Demo Flower Bouquet</h3>
+                            <p class="cc-desc">Demo item only; not for sale.</p>
+                            <div class="cc-price">₱100</div>
+                            <button type="button" class="slide-add-btn" disabled aria-label="View Demo Flower Bouquet details">+</button>
+                        </div>
+                    </div>
+                    <div class="slide" data-product-name="Demo Accessory">
+                        <div class="slide-art">IMAGE PLACEHOLDER</div>
+                        <div class="slide-info">
+                            <span class="cc-cat">Accessories</span>
+                            <h3 class="cc-name">Demo Accessory</h3>
+                            <p class="cc-desc">Demo item only; not for sale.</p>
+                            <div class="cc-price">₱100</div>
+                            <button type="button" class="slide-add-btn" disabled aria-label="View Demo Accessory details">+</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-art">IMAGE PLACEHOLDER</div>
+                        <div class="slide-info">
+                            <span class="cc-cat"></span>
+                            <h3 class="cc-name"></h3>
+                            <p class="cc-desc"></p>
+                            <div class="cc-price"></div>
+                            <button type="button" class="slide-add-btn" disabled aria-label="Product details are not available">+</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-art">IMAGE PLACEHOLDER</div>
+                        <div class="slide-info">
+                            <span class="cc-cat"></span>
+                            <h3 class="cc-name"></h3>
+                            <p class="cc-desc"></p>
+                            <div class="cc-price"></div>
+                            <button type="button" class="slide-add-btn" disabled aria-label="Product details are not available">+</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-art">IMAGE PLACEHOLDER</div>
+                        <div class="slide-info">
+                            <span class="cc-cat"></span>
+                            <h3 class="cc-name"></h3>
+                            <p class="cc-desc"></p>
+                            <div class="cc-price"></div>
+                            <button type="button" class="slide-add-btn" disabled aria-label="Product details are not available">+</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-art">IMAGE PLACEHOLDER</div>
+                        <div class="slide-info">
+                            <span class="cc-cat"></span>
+                            <h3 class="cc-name"></h3>
+                            <p class="cc-desc"></p>
+                            <div class="cc-price"></div>
+                            <button type="button" class="slide-add-btn" disabled aria-label="Product details are not available">+</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-art">IMAGE PLACEHOLDER</div>
+                        <div class="slide-info">
+                            <span class="cc-cat"></span>
+                            <h3 class="cc-name"></h3>
+                            <p class="cc-desc"></p>
+                            <div class="cc-price"></div>
+                            <button type="button" class="slide-add-btn" disabled aria-label="Product details are not available">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-section" id="collection">
+        <div class="shop-header">
+            <span class="eyebrow-dark">SHOP</span>
+            <h2 class="shop-title">The Collection</h2>
+        </div>
+
+        <div class="filter-bar">
+            <div class="filter-chips" id="mainFilters">
+                <button class="chip active" data-filter="all">All</button>
+                <button class="chip" data-filter="jewelry">Jewelry</button>
+                <button class="chip" data-filter="accessories">Accessories</button>
+                <button class="chip" data-filter="perfume">Perfume</button>
+                <button class="chip" data-filter="flowers">Flowers</button>
+                <button class="chip" data-filter="cosmetics">Cosmetics</button>
+            </div>
+            
+            <div class="filter-actions">
+                <button class="btn-toggle-filters" id="toggleFiltersBtn" data-albora-event-id="home-event-3" data-albora-event-type="click">
+                    FILTERS
+                </button>
+                <div class="sort-wrapper">
+                    <span class="sub-filter-label d-none d-md-block albora-inline-51026dde5c6d">SORT</span>
+                    <select class="sort-select">
+                        <option value="best-selling">Best selling</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-low-high">Price: Low to High</option>
+                        <option value="price-high-low">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-filter-bar" id="jewelrySubFilters">
+            <div class="sub-filter-row">
+                <span class="sub-filter-label">SHOP FOR</span>
+                <div class="filter-chips">
+                    <button class="sub-chip active" data-shopfor="all-shop">ALL</button>
+                    <button class="sub-chip" data-shopfor="women">WOMEN</button>
+                    <button class="sub-chip" data-shopfor="men">MEN</button>
+                    <button class="sub-chip" data-shopfor="unisex">UNISEX</button>
+                </div>
+            </div>
+            <div class="sub-filter-row">
+                <span class="sub-filter-label">JEWELRY TYPE</span>
+                <div class="filter-chips">
+                    <button class="sub-chip active" data-type="all-types">ALL</button>
+                    <button class="sub-chip" data-type="earrings">EARRINGS</button>
+                    <button class="sub-chip" data-type="necklace">NECKLACE</button>
+                    <button class="sub-chip" data-type="bracelet">BRACELET</button>
+                    <button class="sub-chip" data-type="ring">RING</button>
+                </div>
+            </div>
+            <div class="sub-filter-row">
+                <span class="sub-filter-label">METAL</span>
+                <div class="filter-chips">
+                    <button class="sub-chip active" data-metal="all-metals">ALL</button>
+                    <button class="sub-chip" data-metal="gold">GOLD</button>
+                    <button class="sub-chip" data-metal="silver">SILVER</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-filter-bar" id="accessoriesSubFilters">
+            <div class="sub-filter-row">
+                <span class="sub-filter-label">ACCESSORY COLLECTIONS</span>
+                <div class="filter-chips">
+                    <button class="sub-chip active" data-acc="all-acc">All</button>
+                    <button class="sub-chip" data-acc="hair-clamp">Hair Clamp</button>
+                    <button class="sub-chip" data-acc="hair-clip">Hair Clip</button>
+                    <button class="sub-chip" data-acc="hair-tie">Hair Tie</button>
+                    <button class="sub-chip" data-acc="headband">Headband</button>
+                    <button class="sub-chip" data-acc="keychains">Keychains</button>
+                    <button class="sub-chip" data-acc="sunglasses">Sunglasses</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-filter-bar" id="perfumeSubFilters">
+            <input type="text" class="search-input" placeholder="Search products">
+            <div class="sub-filter-row">
+                <span class="sub-filter-label">SHOP FOR</span>
+                <div class="filter-chips">
+                    <button class="sub-chip active" data-shopfor="all-shop">All</button>
+                    <button class="sub-chip" data-shopfor="women">Women</button>
+                    <button class="sub-chip" data-shopfor="men">Men</button>
+                    <button class="sub-chip" data-shopfor="unisex">Unisex</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-filter-bar" id="cosmeticsSubFilters">
+            <div class="sub-filter-row">
+                <span class="sub-filter-label">COSMETIC COLLECTIONS </span>
+                <div class="filter-chips">
+                    <button class="sub-chip active" data-cos="all-cos">All</button>
+                    <button class="sub-chip" data-cos="velvet-matte">Velvet Matte</button>
+                    <button class="sub-chip" data-cos="tinted-glossy">Tinted Glossy</button>
+                    <button class="sub-chip" data-cos="lip-cheek-tint">Lip & Cheek Tint</button>
+                    <button class="sub-chip" data-cos="hd-nude-matte">HD Nude Matte Tint</button>
+                    <button class="sub-chip" data-cos="magic-lip-serum">Magic Lip Serum</button>
+                    <button class="sub-chip" data-cos="highlighter">Highlighter</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="flowersSpecialLayout">
+            <div class="flower-promo-box">
+                <div class="flower-promo-content">
+                    <span class="eyebrow-dark">FLOWERS</span>
+                    <h2 class="flower-promo-title">Alborá Bouquet Studio</h2>
+                    <p class="flower-promo-text">Pick your blooms, add a perfume, lip tint or jewelry, choose your wrap and ribbon, and watch your gift take shape.</p>
+                </div>
+                <div class="flower-promo-action"><a href="bouquet-studio.html" class="btn-flower-promo">BUILD YOUR BOUQUET</a></div>
+            </div>
+            <div class="section-label">READY-MADE BOUQUETS</div>
+        </div>
+
+        <div class="shop-grid" id="productGrid">
+            <a class="product-card" data-category="perfume" data-shopfor="women">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="accessories" data-acc="hair-clamp" data-colors='["Black","White","Brown"]' data-description="Demo item only; not for sale. This entry is for testing product options, pricing, and checkout."><span class="new-pill">DEMO ONLY</span>
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name">Demo Accessory</h4>
+                    <div class="product-price">₱100</div>
+                    <div class="product-meta"><span>DEMO ONLY — NOT FOR SALE</span></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="accessories" data-acc="hair-tie">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="jewelry" data-shopfor="women" data-type="earrings" data-metal="gold">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="perfume" data-shopfor="women">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="perfume" data-shopfor="unisex">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="accessories" data-acc="sunglasses">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="perfume" data-shopfor="men" data-description="Demo item only; not for sale. This entry is for testing product options, pricing, and checkout."><span class="new-pill">DEMO ONLY</span>
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name">Demo Perfume</h4>
+                    <div class="product-price">From ₱100</div>
+                    <div class="product-meta"><span>DEMO ONLY — NOT FOR SALE</span></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="jewelry" data-shopfor="women" data-type="necklace" data-metal="gold">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="jewelry" data-shopfor="men" data-type="necklace" data-metal="gold" data-description="Demo item only; not for sale. This entry is for testing product options, pricing, and checkout."><span class="new-pill">DEMO ONLY</span>
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name">Demo Necklace</h4>
+                    <div class="product-price">₱100</div>
+                    <div class="product-meta"><span>DEMO ONLY — NOT FOR SALE</span></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="jewelry" data-shopfor="unisex" data-type="bracelet" data-metal="silver">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="perfume" data-shopfor="men">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="perfume" data-shopfor="unisex">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="jewelry" data-shopfor="women" data-type="ring" data-metal="gold">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="jewelry" data-shopfor="men" data-type="ring" data-metal="silver">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="flowers" data-colors='["Red","Pink","White"]' data-description="Demo item only; not for sale. This entry is for testing product options, pricing, and checkout."><span class="new-pill">DEMO ONLY</span>
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name">Demo Flower Bouquet</h4>
+                    <div class="product-price">₱100</div>
+                    <div class="product-meta"><span>DEMO ONLY — NOT FOR SALE</span></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="flowers" data-colors='["Pink","Yellow","White"]'>
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="flowers" data-colors='["Blush Pink","White"]'>
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="flowers" data-colors='["Yellow","Orange"]'>
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+
+            <a class="product-card" data-category="cosmetics" data-cos="velvet-matte" data-shades='["Rose Nude","Soft Pink","Cherry Red"]' data-description="Demo item only; not for sale. This entry is for testing product options, pricing, and checkout."><span class="new-pill">DEMO ONLY</span>
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name">Demo Cosmetics</h4>
+                    <div class="product-price">₱100</div>
+                    <div class="product-meta"><span>DEMO ONLY — NOT FOR SALE</span></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="cosmetics" data-cos="lip-cheek-tint">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="cosmetics" data-cos="tinted-glossy">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="cosmetics" data-cos="hd-nude-matte">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="cosmetics" data-cos="magic-lip-serum">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="cosmetics" data-cos="highlighter">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="cosmetics" data-cos="velvet-matte">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="jewelry" data-shopfor="women" data-type="anklet" data-metal="gold">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="jewelry" data-shopfor="women" data-type="pendants" data-metal="silver">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="jewelry" data-shopfor="unisex" data-type="body-piercing" data-metal="silver">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="accessories" data-acc="hair-clip">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="accessories" data-acc="keychains">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="accessories" data-acc="fake-nails">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-category="accessories" data-acc="headband">
+                <div class="product-art" role="img" aria-label="Product image placeholder"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ TRUST SECTION ============ -->
+    <section class="trust-section">
+        <div class="trust-item">
+            <h4>Free Shipping</h4>
+            <p>On all orders over ₱2,000. Shipped with J&T Express nationwide.</p>
+        </div>
+        <div class="trust-item">
+            <h4>Gift Ready</h4>
+            <p>Every order arrives in our signature box with a handwritten note.</p>
+        </div>
+        <div class="trust-item">
+            <h4>My Orders</h4>
+            <p>View and track your orders anytime.</p>
+            <a href="orders.html" class="my-orders-link">Go to My Orders →</a>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer-section">
+        <div class="footer-logo">
+            <img src="logo.png" alt="ALBORÁ">
+        </div>
+        <div class="footer-text">
+            © 2025 Alborá. Small luxuries, beautifully given. Made with care in the Philippines.
+        </div>
+    </footer>
+
+    <!-- CART DRAWER OVERLAY -->
+    <div id="cartOverlay" class="cart-overlay"></div>
+    
+    <!-- TOAST NOTIFICATION -->
+    <div id="toastNotification" class="toast-notification">
+        <i class="bi bi-check-circle-fill toast-icon"></i>
+        <span id="toastMessage">Added to cart!</span>
+    </div>
+
+    <!-- CART DRAWER -->
+    <div id="cartDrawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>Your bag</h3>
+            <button class="close-btn" data-albora-event-id="home-event-2" data-albora-event-type="click">✖</button>
+        </div>
+        
+        <div class="cart-body" id="cartItemsContainer">
+            <!-- Lalabas dito yung items -->
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-subtotal-row">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">₱0</span>
+            </div>
+            <p class="cart-note">The J&T shipping fee is added after your payment is verified.</p>
+            <button class="cart-checkout-btn" data-albora-event-id="home-event-1" data-albora-event-type="click">CHECKOUT</button>
+        </div>
+    </div>
+
+    <!-- THE COLLECTION PRODUCT DETAILS -->
+    <div id="productDetailsModal" class="product-modal" aria-hidden="true">
+        <section class="product-modal-panel" role="dialog" aria-modal="true" aria-labelledby="productModalTitle" tabindex="-1">
+            <header class="product-modal-header">
+                <h2>Product Details</h2>
+                <button type="button" class="product-modal-close" aria-label="Close product details">×</button>
+            </header>
+            <div class="product-modal-image" id="productModalImage">
+                <div class="product-modal-placeholder" role="img" aria-label="Product image placeholder">IMAGE PLACEHOLDER</div>
+            </div>
+            <div class="product-modal-content">
+                <p class="product-modal-category" id="productModalCategory"></p>
+                <h2 class="product-modal-title" id="productModalTitle"></h2>
+                <div class="product-modal-price" id="productModalPrice"></div>
+                <p class="product-modal-description" id="productModalDescription"></p>
+                <div class="product-modal-meta" id="productModalMeta"></div>
+                <p class="product-modal-stock" id="productModalStock"></p>
+                <div class="product-customization-group" id="lipstickShadeGroup" hidden>
+                    <h3>Choose Shade</h3>
+                    <div class="product-option-list" id="lipstickShadeOptions"></div>
+                    <p class="product-option-note warning" id="lipstickShadeUnavailable" hidden>Shade choices are not available yet.</p>
+                </div>
+                <div class="product-customization-group" id="accessoryColorGroup" hidden>
+                    <h3>Choose Color</h3>
+                    <div class="product-option-list" id="accessoryColorOptions"></div>
+                    <p class="product-option-note warning" id="accessoryColorUnavailable" hidden>Color choices are not available yet.</p>
+                </div>
+                <div class="product-customization-group" id="flowerColorGroup" hidden>
+                    <h3>Choose Flower Color</h3>
+                    <div class="product-option-list" id="flowerColorOptions"></div>
+                    <p class="product-option-note warning" id="flowerColorUnavailable" hidden>Flower color choices are not available yet.</p>
+                </div>
+                <div class="product-customization-group" id="jewelryFinishGroup" hidden>
+                    <h3>Choose Finish</h3>
+                    <div class="product-option-list">
+                        <button type="button" class="product-option-button" data-finish="gold" aria-pressed="false">Gold</button>
+                        <button type="button" class="product-option-button" data-finish="silver" aria-pressed="false">Silver</button>
+                    </div>
+                </div>
+                <div class="product-customization-group" id="necklaceLengthGroup" hidden>
+                    <h3>Choose Length</h3>
+                    <div class="product-option-list">
+                        <button type="button" class="product-option-button" data-necklace-length="18 in" aria-pressed="false">18 in</button>
+                    </div>
+                </div>
+                <div class="product-customization-group" id="ringSizeGroup" hidden>
+                    <h3>Choose Ring Size</h3>
+                    <div class="product-option-list">
+                        <button type="button" class="product-option-button" data-ring-size="6" aria-pressed="false">Size 6</button>
+                        <button type="button" class="product-option-button" data-ring-size="7" aria-pressed="false">Size 7</button>
+                        <button type="button" class="product-option-button" data-ring-size="8" aria-pressed="false">Size 8</button>
+                    </div>
+                </div>
+                <div class="product-customization-group" id="perfumeOptionsGroup" hidden>
+                    <h3>Choose Size</h3>
+                    <div class="product-option-list">
+                        <button type="button" class="product-option-button" data-perfume-size="10ml" aria-pressed="false">10 ml</button>
+                        <button type="button" class="product-option-button" data-perfume-size="30ml" aria-pressed="false">30 ml</button>
+                        <button type="button" class="product-option-button" data-perfume-size="50ml" aria-pressed="false">50 ml</button>
+                    </div>
+                    <label class="product-option-check" id="addPerfumeBoxOption">
+                        <input type="checkbox" id="addPerfumeBoxCheckbox">
+                        <span>Add 10 ml Box (+₱15)</span>
+                    </label>
+                    <p class="product-option-note" id="perfumeBoxNote">Optional for 10 ml (+₱15); included free with 30 ml and 50 ml.</p>
+                    <p class="product-option-price" id="productModalOptionTotal" aria-live="polite"></p>
+                </div>
+                <div class="product-modal-quantity">
+                    <span class="product-modal-quantity-label">Quantity</span>
+                    <button type="button" id="productQuantityMinus" aria-label="Decrease quantity">−</button>
+                    <output id="productQuantity" aria-live="polite">1</output>
+                    <button type="button" id="productQuantityPlus" aria-label="Increase quantity">+</button>
+                </div>
+                <div class="product-customization-group" id="jewelryBoxGroup" hidden>
+                    <label class="product-add-on-option" id="jewelryBoxOption">
+                        <span class="product-add-on-image">IMAGE PLACEHOLDER</span>
+                        <input type="checkbox" id="jewelryBoxCheckbox">
+                        <span id="jewelryBoxLabel"></span>
+                        <span class="product-add-on-price">₱80</span>
+                    </label>
+                    <p class="product-option-price" id="jewelryModalOptionTotal" aria-live="polite"></p>
+                </div>
+                <div class="product-customization-group" id="giftPackagingGroup">
+                    <h3>Gift Packaging</h3>
+                    <div class="product-packaging-list" role="radiogroup" aria-label="Gift packaging">
+                        <label class="product-packaging-option no-image is-selected">
+                            <input type="radio" name="giftPackaging" value="none" data-label="No Gift Packaging" data-price="0" checked>
+                            <span class="product-packaging-copy">
+                                <span class="product-packaging-name">No Gift Packaging</span>
+                                <span class="product-packaging-description">No additional packaging.</span>
+                            </span>
+                            <span class="product-packaging-price">₱0</span>
+                        </label>
+                        <label class="product-packaging-option">
+                            <input type="radio" name="giftPackaging" value="gift-bag" data-label="Alborá Gift Bag" data-price="25">
+                            <span class="product-packaging-image" role="img" aria-label="Alborá Gift Bag image placeholder">IMAGE PLACEHOLDER</span>
+                            <span class="product-packaging-copy">
+                                <span class="product-packaging-name">Alborá Gift Bag</span>
+                                <span class="product-packaging-description">Ribbon-tied gift bag · 12 × 5.7 × 0.16.</span>
+                            </span>
+                            <span class="product-packaging-price">₱25</span>
+                        </label>
+                        <label class="product-packaging-option">
+                            <input type="radio" name="giftPackaging" value="men-gift-bag" data-label="Alborá Men Gift Bag" data-price="25">
+                            <span class="product-packaging-image" role="img" aria-label="Alborá Men Gift Bag image placeholder">IMAGE PLACEHOLDER</span>
+                            <span class="product-packaging-copy">
+                                <span class="product-packaging-name">Alborá Men Gift Bag</span>
+                                <span class="product-packaging-description">Dark, minimal gift bag · 12 × 5.7 × 0.16.</span>
+                            </span>
+                            <span class="product-packaging-price">₱25</span>
+                        </label>
+                        <label class="product-packaging-option">
+                            <input type="radio" name="giftPackaging" value="exclusive-box" data-label="Alborá Exclusive Gift Box" data-price="190">
+                            <span class="product-packaging-image" role="img" aria-label="Alborá Exclusive Gift Box image placeholder">IMAGE PLACEHOLDER</span>
+                            <span class="product-packaging-copy">
+                                <span class="product-packaging-name">Alborá Exclusive Gift Box</span>
+                                <span class="product-packaging-description">Ribbon box with tissue, dried flower card and letter · 25 × 20 × 7.</span>
+                            </span>
+                            <span class="product-packaging-price">₱190</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-modal-info">
+                    <h3>Shipped with J&amp;T Express</h3>
+                    <p>The shipping fee is added after payment verification.</p>
+                    <h3>Pay with GCash or MariBank</h3>
+                </div>
+            </div>
+            <div class="product-modal-actions">
+                <button type="button" class="product-modal-add" id="productModalAdd">ADD TO BAG</button>
+                <button type="button" class="product-modal-buy" id="productModalBuy">BUY NOW</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="inline-events.js"></script>
+    <script src="product-options.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jewelry · Alborá</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="category-listing.css">
+</head>
+<body>
+
+    <div class="top-bar">Pay with GCash or Maribank &nbsp;·&nbsp; Shipped with J&T Express</div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a class="nav-link" href="index.html">Shop</a>
+            
+                <a class="nav-link" href="alboramen.html">Alborá Men</a>
+                <a class="nav-link" href="help.html">Help</a>
+            </div>
+            <div class="brand-logo-container"><a href="index.html"><img src="logo.png" alt="ALBORÁ" class="brand-logo-img"></a></div>
+            <div class="nav-right">
+                <a href="bag.html" class="bag-btn">BAG <span class="bag-badge">0</span></a>
+                <button class="hamburger-btn" data-albora-event-id="jewelry-event-1" data-albora-event-type="click"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html#collection">Shop</a><a href="index.html#bestsellers">Watch &amp; Shop</a>
+            <a href="alboramen.html">Alborá Men</a><a href="bag.html">Bag</a><a href="help.html">Help</a>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <span class="eyebrow-dark">SHOP · JEWELRY</span>
+        <h1 class="page-title">Jewelry</h1>
+        <p class="page-subtitle">Gold-plated classics, pearl drops and signature chains — pieces made to be layered and loved.</p>
+    </section>
+
+    <section class="shop-section">
+        <div class="filter-bar">
+            <div class="albora-inline-9fbb734e8e59">
+                <span class="sub-filter-label albora-inline-82c16c94288f">SORT</span>
+                <select class="sort-select">
+                    <option>Best selling</option><option>Newest</option><option>Price: Low to High</option><option>Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="sub-filter-bar">
+            <div class="sub-filter-row">
+                <span class="sub-filter-label">SHOP FOR</span>
+                <div class="filter-chips">
+                    <button class="sub-chip active" data-shopfor="all-shop">ALL</button>
+                    <button class="sub-chip" data-shopfor="women">WOMEN</button>
+                    <button class="sub-chip" data-shopfor="men">MEN</button>
+                    <button class="sub-chip" data-shopfor="unisex">UNISEX</button>
+                </div>
+            </div>
+            <div class="sub-filter-row">
+                <span class="sub-filter-label">JEWELRY TYPE</span>
+                <div class="filter-chips albora-inline-42bd9357874f">
+                    <button class="sub-chip active" data-type="all-types">ALL</button>
+                    <button class="sub-chip" data-type="earrings">EARRINGS</button>
+                    <button class="sub-chip" data-type="necklace">NECKLACE</button>
+                    <button class="sub-chip" data-type="pendants">PENDANTS</button>
+                    <button class="sub-chip" data-type="bracelet">BRACELET</button>
+                    <button class="sub-chip" data-type="ring">RING</button>
+                    <button class="sub-chip" data-type="body-piercing">BODY PIERCING</button>
+                    <button class="sub-chip" data-type="waist-necklace">WAIST NECKLACE</button>
+                    <button class="sub-chip" data-type="anklet">ANKLET</button>
+                    <button class="sub-chip" data-type="armlet">ARMLET</button>
+                    <button class="sub-chip" data-type="crown">CROWN</button>
+                    <button class="sub-chip" data-type="jewelry-set">JEWELRY SET</button>
+                </div>
+            </div>
+            <div class="sub-filter-row">
+                <span class="sub-filter-label">METAL</span>
+                <div class="filter-chips">
+                    <button class="sub-chip active" data-metal="all-metals">ALL</button>
+                    <button class="sub-chip" data-metal="gold">GOLD</button>
+                    <button class="sub-chip" data-metal="silver">SILVER</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-grid" id="productGrid">
+            <a class="product-card" data-shopfor="women" data-type="earrings" data-metal="gold">
+                <div class="product-art" aria-hidden="true"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-shopfor="women" data-type="necklace" data-metal="gold">
+                <div class="product-art" aria-hidden="true"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-shopfor="men" data-type="necklace" data-metal="gold" data-description="Demo item only; not for sale. This entry is for testing product options, pricing, and checkout."><span class="new-pill">DEMO ONLY</span>
+                <div class="product-art" aria-hidden="true"></div>
+                <div class="product-info">
+                    <h4 class="product-name">Demo Necklace</h4>
+                    <div class="product-price">₱100</div>
+                    <div class="product-meta"><span>DEMO ONLY — NOT FOR SALE</span></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-shopfor="unisex" data-type="bracelet" data-metal="silver">
+                <div class="product-art" aria-hidden="true"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-shopfor="women" data-type="ring" data-metal="gold">
+                <div class="product-art" aria-hidden="true"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+            <a class="product-card" data-shopfor="men" data-type="ring" data-metal="silver">
+                <div class="product-art" aria-hidden="true"></div>
+                <div class="product-info">
+                    <h4 class="product-name"></h4>
+                    <div class="product-price"></div>
+                    <div class="product-meta"></div>
+                    <button type="button" class="quick-add" disabled aria-label="Product details are not available">+</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="trust-section">
+            <div class="trust-item"><h4>Shipped with J&T Express</h4><p>We confirm your shipping fee after your product payment is verified.</p></div>
+            <div class="trust-item"><h4>Pay your way</h4><p>GCash or Maribank, in two steps: products first, then shipping.</p></div>
+            <div class="trust-item"><h4>Already ordered?</h4>
+                <div class="find-order-form"><input type="text" class="find-order-input" placeholder="ALB-123456"><button class="btn-find">FIND ORDER</button></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-logo"><a href="index.html"><img src="logo.png" alt="ALBORÁ"></a></div>
+        <div class="footer-text"></div>
+        <div class="footer-links">
+            <span>Admin panel (prototype)</span><span>Preview GCash QR</span><span>Preview Maribank QR</span><span>Preview a hero video</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="inline-events.js"></script>
+    <script src="jewelry.js"></script>
+    <script src="category-page.js"></script>
+</body>
+</html>

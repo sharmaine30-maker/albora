@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alborá - Account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+        <!-- Close Button (X) -->
+    <a href="index.html" class="close-btn">✖</a>
+
+    <!-- LOGO SA TAAS -->
+    <div class="header-logo">
+        <!-- Palitan mo ito ng totoong logo path mo, halimbawa: <img src="logo.png" alt="Alborá Logo"> -->
+        <img src="logo.png" alt="Alborá Logo" data-albora-event-id="login-event-8" data-albora-event-type="error">
+        <h1 id="fallbackLogo" class="albora-inline-d0466aa33fa8">ALBORÁ</h1>
+        <p class="albora-inline-76927be05116">Small luxuries, beautifully given</p>
+    </div>
+
+    <div class="auth-container">
+        
+        <!-- 1. LOGIN FORM -->
+<div class="auth-form active" id="form-login">
+                <h2 class="form-title">Welcome Back</h2>
+            <p class="form-subtitle">Shine Like The Aurora.</p>
+            
+            <div class="input-group">
+                <label class="input-label">Email Address</label>
+                <input type="email" class="form-input" placeholder="" id="loginEmail">
+                <div class="error-msg" id="err-login-email">Please enter a valid email.</div>
+            </div>
+            
+            <div class="input-group">
+                <label class="input-label">Password</label>
+                <input type="password" class="form-input" placeholder="" id="loginPass">
+                <div class="error-msg" id="err-login-pass">Please enter your password.</div>
+            </div>
+            
+<button class="btn-primary" data-albora-event-id="login-event-7" data-albora-event-type="click">Log in</button>
+            <div class="form-links">
+                <a data-albora-event-id="login-event-6" data-albora-event-type="click">Forgot password?</a>
+                <span class="divider">|</span>
+                <a data-albora-event-id="login-event-5" data-albora-event-type="click">Create account</a>
+            </div>
+        </div>
+
+        <!-- 2. SIGN-UP FORM -->
+<div class="auth-form" id="form-signup">
+                <h2 class="form-title">Create Account</h2>
+            <p class="form-subtitle">Shine Like The Aurora.</p>
+            
+            <div class="input-group">
+                <label class="input-label">Full Name</label>
+                <input type="text" class="form-input" placeholder="" id="signupName">
+                <div class="error-msg" id="err-signup-name">Please enter your full name.</div>
+            </div>
+            
+            <div class="input-group">
+                <label class="input-label">Email Address</label>
+                <input type="email" class="form-input" placeholder="" id="signupEmail">
+                <div class="error-msg" id="err-signup-email">Please enter a valid email.</div>
+            </div>
+            
+            <div class="input-group">
+                <label class="input-label">Password</label>
+                <input type="password" class="form-input" placeholder="" id="signupPass">
+                <div class="error-msg" id="err-signup-pass">Password must be at least 6 characters.</div>
+            </div>
+            
+            <button class="btn-primary" data-albora-event-id="login-event-4" data-albora-event-type="click">Create Account</button>
+            
+            <div class="form-links">
+                Already have an account? <a data-albora-event-id="login-event-3" data-albora-event-type="click">Sign in</a>
+            </div>
+        </div>
+
+        <!-- 3. FORGOT PASSWORD FORM -->
+        <div class="auth-form" id="form-forgot">
+            <h2 class="form-title">Forgot Password?</h2>
+            <p class="form-subtitle">Enter your email and we'll send you a link to reset your password.</p>
+            
+            <div class="input-group">
+                <label class="input-label">Email Address</label>
+                <input type="email" class="form-input" placeholder="" id="forgotEmail">
+                <div class="error-msg" id="err-forgot-email">Please enter a valid email.</div>
+            </div>
+            
+            <button class="btn-primary" data-albora-event-id="login-event-2" data-albora-event-type="click">Send Reset Link</button>
+            
+            <div class="form-links">
+                Remember your password? <a data-albora-event-id="login-event-1" data-albora-event-type="click">Back to login</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+       <script src="inline-events.js"></script>
+       <script src="login.js"></script>
+   
+
+</body>
+</html>

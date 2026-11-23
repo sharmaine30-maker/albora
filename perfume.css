@@ -1,0 +1,126 @@
+
+        :root { --nav-bg:#191613; --text-light:#E8DECB; --gold:#C5A253; --panel-dark:#5A3C08; --section-bg:#0F0D0B; }
+        * { box-sizing: border-box; }
+        body, html { margin:0; padding:0; width:100%; max-width:100vw; height:100%; font-family:'Jost',sans-serif; background-color:var(--panel-dark); overflow-x:hidden; }
+        .top-bar { background-color:#F0D890; color:#333; font-size:10px; text-align:center; padding:8px 5px; letter-spacing:0.5px; width:100%; }
+        .navbar { background-color:var(--nav-bg); padding:0; height:60px; width:100%; display:flex; align-items:center; position:relative; z-index:1000; }
+        .nav-container { width:100%; padding:0 15px; display:flex; align-items:center; justify-content:space-between; height:100%; }
+        .nav-left { display:flex; align-items:center; gap:20px; flex:1; }
+        .nav-link { color:var(--text-light)!important; font-size:10px; text-transform:uppercase; letter-spacing:1px; text-decoration:none; }
+        .brand-logo-container { flex:1; display:flex; justify-content:center; align-items:center; }
+        .brand-logo-img { height:30px; width:auto; object-fit:contain; }
+        .nav-right { flex:1; display:flex; justify-content:flex-end; align-items:center; gap:10px; }
+        .bag-btn { color:var(--text-light); text-decoration:none; font-size:10px; text-transform:uppercase; display:flex; align-items:center; gap:5px; }
+        .bag-badge { background-color:var(--gold); color:var(--nav-bg); font-size:9px; width:18px; height:18px; display:grid; place-items:center; border-radius:50%; }
+        .hamburger-btn { display:none; background:none; border:none; cursor:pointer; padding:5px; }
+        .hamburger-btn .bar { display:block; width:22px; height:2px; background-color:var(--text-light); margin:4px 0; }
+        .mobile-menu { display:none; position:absolute; top:60px; left:0; width:100%; background-color:var(--nav-bg); padding:15px 0; text-align:center; border-top:1px solid rgba(255,255,255,0.1); z-index:999; }
+        .mobile-menu.active { display:block; }
+        .mobile-menu a { display:block; color:var(--text-light); text-decoration:none; padding:10px 0; font-size:12px; text-transform:uppercase; }
+        .page-banner { background-color:var(--section-bg); padding:40px 15px 25px 15px; position:relative; z-index:10; border-bottom:1px solid rgba(255,255,255,0.06); }
+        .eyebrow-dark { font-size:9px; text-transform:uppercase; letter-spacing:1.5px; color:#9E9585; display:block; margin-bottom:5px; }
+        .page-title { font-family:'Bodoni Moda',serif; font-size:42px; color:var(--text-light); margin:0 0 10px 0; }
+        .page-subtitle { color:#A0988A; font-size:14px; line-height:1.6; max-width:520px; margin:0; }
+        .shop-section { background-color:var(--section-bg); padding:30px 0 40px 0; }
+        .filter-bar { display:flex; align-items:center; justify-content:space-between; padding:0 15px; margin-bottom:20px; flex-wrap:wrap; gap:15px; }
+        .sort-select { background:transparent; border:1px solid rgba(255,255,255,0.2); color:var(--text-light); padding:8px 16px; font-size:11px; text-transform:uppercase; letter-spacing:1px; cursor:pointer; }
+        .sort-select option { background:var(--nav-bg); color:var(--text-light); }
+        .sub-filter-bar { padding:0 15px 25px 15px; display:flex; flex-direction:column; gap:15px; }
+        .sub-filter-row { display:flex; align-items:center; gap:15px; flex-wrap:wrap; }
+        .sub-filter-label { font-size:10px; text-transform:uppercase; letter-spacing:1.5px; color:#9E9585; white-space:nowrap; width:150px; flex-shrink:0; }
+        .filter-chips { display:flex; gap:8px; overflow-x:auto; padding-bottom:5px; flex-wrap:wrap; }
+        .filter-chips::-webkit-scrollbar { display:none; }
+        .sub-chip { background:transparent; border:1px solid rgba(255,255,255,0.15); color:var(--text-light); padding:8px 14px; font-size:10px; text-transform:uppercase; letter-spacing:1px; cursor:pointer; white-space:nowrap; transition:0.3s; }
+        .sub-chip:hover, .sub-chip.active { background:var(--gold); color:var(--nav-bg); border-color:var(--gold); }
+        .search-input { width:100%; max-width:500px; background:transparent; border:1px solid rgba(255,255,255,0.2); color:var(--text-light); padding:10px 15px; font-size:12px; font-family:'Jost',sans-serif; }
+        .search-input::placeholder { color:#888; }
+        .shop-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px 15px; padding:0 15px; }
+        .product-card { display:block; text-decoration:none; position:relative; }
+        .product-art { background:linear-gradient(180deg,#3D3620 0%,#2A2516 100%); aspect-ratio:1/1; display:flex; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.05); position:relative; }
+        .product-art svg { width:80px; height:100px; }
+        .sale-pill, .new-pill { position:absolute; top:10px; left:10px; background:var(--gold); color:var(--nav-bg); font-size:10px; padding:3px 8px; font-weight:500; }
+        .product-info { padding-top:12px; position:relative; min-height:85px; }
+        .product-name { font-family:'Jost',sans-serif; font-size:13px; color:var(--text-light); margin:0 0 5px 0; font-weight:400; line-height:1.3; }
+        .product-price { font-size:14px; color:var(--text-light); font-weight:500; margin-bottom:5px; }
+        .product-price s { color:#888; font-size:12px; font-weight:300; margin-left:5px; }
+        .product-meta { display:flex; flex-direction:column; gap:3px; font-size:11px; color:#888; }
+        .stock-good { color:#7FC49B; } .stock-warn { color:#D9B865; }
+        .quick-add { position:absolute; bottom:0; right:0; width:32px; height:32px; border-radius:50%; background:rgba(255,255,255,0.1); color:var(--text-light); border:1px solid rgba(255,255,255,0.2); display:grid; place-items:center; font-size:18px; cursor:pointer; transition:0.3s; }
+        .quick-add:hover { background:var(--gold); color:var(--nav-bg); border-color:var(--gold); }
+        .trust-section { background-color:var(--section-bg); padding:40px 15px; border-top:1px solid rgba(255,255,255,0.1); display:grid; grid-template-columns:1fr 1fr 1fr; gap:30px; margin-top:40px; align-items:center; }
+        .trust-item h4 { font-size:14px; color:var(--text-light); margin:0 0 8px 0; font-weight:500; }
+        .trust-item p { font-size:13px; color:#A0988A; margin:0; line-height:1.5; }
+        .find-order-form { display:flex; gap:8px; margin-top:10px; }
+        .find-order-input { flex:1; background:transparent; border:1px solid rgba(255,255,255,0.2); color:var(--text-light); padding:8px 12px; font-size:12px; }
+        .btn-find { background:var(--gold); color:var(--nav-bg); border:none; padding:8px 16px; font-size:10px; text-transform:uppercase; letter-spacing:1px; font-weight:500; cursor:pointer; }
+        .footer-section { background-color:var(--nav-bg); padding:30px 15px; border-top:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px; }
+        .footer-logo img { height:25px; width:auto; object-fit:contain; }
+        .footer-text { font-size:11px; color:#7A7064; max-width:400px; text-align:center; }
+        .footer-links { display:flex; gap:20px; font-size:10px; text-transform:uppercase; letter-spacing:1px; flex-wrap:wrap; justify-content:center; }
+        .footer-links a, .footer-links span { color:#7A7064; text-decoration:underline; text-underline-offset:3px; }
+        .footer-links a:hover { color:var(--gold); }
+        .footer-links span { text-decoration:none; cursor:default; }
+        @media (max-width:991px) {
+            .nav-left { display:none; } .hamburger-btn { display:block!important; } .brand-logo-container { justify-content:flex-start; flex:0 0 auto; margin-right:auto; }
+            .page-banner { padding:30px 15px 20px 15px; }
+            .page-title { font-size:30px; }
+            .page-subtitle { font-size:13px; }
+            .filter-bar { flex-direction:column; align-items:stretch; gap:10px; padding:0 15px; }
+            .filter-bar > div { margin-left:0!important; width:100%; justify-content:space-between; gap:10px!important; }
+            .sort-select { flex:1; min-width:0; font-size:10px; padding:8px 10px; }
+            .sub-filter-label[style*="width: auto"] { width:auto!important; font-size:9px; }
+            .sub-filter-bar { padding:0 15px 20px 15px; }
+            .sub-filter-row { flex-direction:column; align-items:flex-start; gap:8px; }
+            .sub-filter-label { width:100%; margin-bottom:2px; font-size:9px; }
+            .filter-chips { flex-wrap:wrap; gap:6px; width:100%; }
+            .sub-chip { padding:6px 10px; font-size:9px; }
+            .search-input { max-width:100%; font-size:11px; }
+            .shop-grid { grid-template-columns:repeat(2,1fr); gap:15px 10px; padding:0 15px; }
+            .product-art svg { width:60px; height:75px; } .product-name { font-size:11px; } .product-price { font-size:12px; } .product-meta { font-size:9px; }
+            .quick-add { width:28px; height:28px; font-size:16px; } .product-info { min-height:70px; }
+            .flower-promo-box { flex-direction:column; text-align:center; padding:30px 20px; }
+            .flower-promo-content { margin-bottom:15px; }
+            .flower-promo-title { font-size:26px; }
+            .trust-section { grid-template-columns:1fr; gap:20px; text-align:center; padding:30px 15px; }
+            .footer-section { flex-direction:column; text-align:center; } .footer-links { justify-content:center; flex-wrap:wrap; }
+        }
+        /* ALBORÁ DATABASE-READY CONTENT PLACEHOLDER */
+        .card-image-wrapper,
+        .product-art,
+        .slide-art {
+            background: #26231E !important;
+            border: 1px dashed #C5A253 !important;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-image-wrapper::before,
+        .product-art::before,
+        .slide-art::before { content: none; }
+        .card-image-wrapper::after,
+        .product-art::after,
+        .slide-art::after {
+            content: "IMAGE PLACEHOLDER";
+            color: #C5A253;
+            font-family: 'Jost', sans-serif;
+            font-size: 8px;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+        .card-image-wrapper > *,
+        .product-art > *,
+        .slide-art > * { display: none !important; }
+
+html body .albora-inline-82c16c94288f {
+    width:auto;
+    margin:0;
+    
+}
+
+html body .albora-inline-9fbb734e8e59 {
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-left:auto;
+    
+}

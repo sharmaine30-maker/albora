@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alborá - Bouquet Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bouquet-studio.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Alborá &middot; Bouquet Studio</h1>
+        <button class="close-btn" data-albora-event-id="bouquet-studio-event-21" data-albora-event-type="click">✖</button>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="studio-wrapper">
+        <div class="custom-col">
+            <h2>Make it yours</h2>
+            <p class="subtitle">A few lovely choices, one bouquet that's uniquely yours.</p>
+
+            <!-- 01 FLOWER TYPE -->
+            <div class="option-group">
+                <div class="option-header">
+                    <span class="option-label">01 Flower type</span>
+                </div>
+                <div class="items-grid">
+                    <!-- TULIP -->
+                    <div class="item-card" id="card-tulip">
+                        <div class="item-image-box">
+                            <div class="item-image-placeholder">IMAGE PLACEHOLDER</div>
+                        </div>
+                        <span class="item-title">Demo Tulip</span>
+                        <span class="item-price">Demo price · ₱120 per stem</span>
+                        <div class="stem-color-selectors" data-colors="Pink|Red|White|Yellow"></div>
+                        <div class="qty-controls">
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-20" data-albora-event-type="click">−</button>
+                            <span class="qty-value" id="qty-tulip">0</span>
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-19" data-albora-event-type="click">+</button>
+                        </div>
+                    </div>
+
+                    <!-- LILIES -->
+                    <div class="item-card" id="card-lilies">
+                        <div class="item-image-box">
+                            <div class="item-image-placeholder">IMAGE PLACEHOLDER</div>
+                        </div>
+                        <span class="item-title">Demo Lily</span>
+                        <span class="item-price">Demo price · ₱150 per stem</span>
+                        <div class="stem-color-selectors" data-colors="White|Yellow|Orange"></div>
+                        <div class="qty-controls">
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-18" data-albora-event-type="click">−</button>
+                            <span class="qty-value" id="qty-lilies">0</span>
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-17" data-albora-event-type="click">+</button>
+                        </div>
+                    </div>
+
+                    <!-- ROSE -->
+                    <div class="item-card" id="card-rose">
+                        <div class="item-image-box">
+                            <div class="item-image-placeholder">IMAGE PLACEHOLDER</div>
+                        </div>
+                        <span class="item-title">Demo Rose</span>
+                        <span class="item-price">Demo price · ₱100 per stem</span>
+                        <div class="stem-color-selectors" data-colors="Red|Pink|Purple"></div>
+                        <div class="qty-controls">
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-16" data-albora-event-type="click">−</button>
+                            <span class="qty-value" id="qty-rose">0</span>
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-15" data-albora-event-type="click">+</button>
+                        </div>
+                    </div>
+
+                    <!-- HYDRANGEA -->
+                    <div class="item-card" id="card-hydrangea">
+                        <div class="item-image-box">
+                            <div class="item-image-placeholder">IMAGE PLACEHOLDER</div>
+                        </div>
+                        <span class="item-title">Demo Hydrangea</span>
+                        <span class="item-price">Demo price · ₱180 per stem</span>
+                        <div class="stem-color-selectors" data-colors="Blue|Purple|Pink"></div>
+                        <div class="qty-controls">
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-14" data-albora-event-type="click">−</button>
+                            <span class="qty-value" id="qty-hydrangea">0</span>
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-13" data-albora-event-type="click">+</button>
+                        </div>
+                    </div>
+
+                    <!-- DAISY -->
+                    <div class="item-card" id="card-daisy">
+                        <div class="item-image-box">
+                            <div class="item-image-placeholder">IMAGE PLACEHOLDER</div>
+                        </div>
+                        <span class="item-title">Demo Daisy</span>
+                        <span class="item-price">Demo price · ₱60 per stem</span>
+                        <div class="stem-color-selectors" data-colors="White|Yellow"></div>
+                        <div class="qty-controls">
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-12" data-albora-event-type="click">−</button>
+                            <span class="qty-value" id="qty-daisy">0</span>
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-11" data-albora-event-type="click">+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 02 FLOWER FILLERS -->
+            <div class="option-group">
+                <div class="option-header">
+                    <span class="option-label">02 Flower fillers</span>
+                </div>
+                <div class="items-grid">
+                    <div class="item-card" id="card-leaf1">
+                        <div class="item-image-box">
+                            <div class="item-image-placeholder">IMAGE PLACEHOLDER</div>
+                        </div>
+                        <span class="item-title">Leaf 1</span>
+                        <span class="item-price">₱30 each</span>
+                        <div class="qty-controls">
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-10" data-albora-event-type="click">−</button>
+                            <span class="qty-value" id="qty-leaf1">0</span>
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-9" data-albora-event-type="click">+</button>
+                        </div>
+                    </div>
+                    <div class="item-card" id="card-leaf2">
+                        <div class="item-image-box">
+                            <div class="item-image-placeholder">IMAGE PLACEHOLDER</div>
+                        </div>
+                        <span class="item-title">Leaf 2</span>
+                        <span class="item-price">₱40 each</span>
+                        <div class="qty-controls">
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-8" data-albora-event-type="click">−</button>
+                            <span class="qty-value" id="qty-leaf2">0</span>
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-7" data-albora-event-type="click">+</button>
+                        </div>
+                    </div>
+                    <div class="item-card" id="card-leaf3">
+                        <div class="item-image-box">
+                            <div class="item-image-placeholder">IMAGE PLACEHOLDER</div>
+                        </div>
+                        <span class="item-title">Leaf 3</span>
+                        <span class="item-price">₱50 each</span>
+                        <div class="qty-controls">
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-6" data-albora-event-type="click">−</button>
+                            <span class="qty-value" id="qty-leaf3">0</span>
+                            <button class="qty-btn" data-albora-event-id="bouquet-studio-event-5" data-albora-event-type="click">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 03 WRAPPING DESIGN -->
+            <div class="option-group">
+                <div class="option-header">
+                    <span class="option-label">03 Wrapping design</span>
+                </div>
+                <div class="items-grid">
+                    <div class="item-card" id="card-kraft" data-choice-group="wrapping" data-option-id="kraft" data-price="0" role="button" tabindex="0" aria-pressed="false">
+                        <div class="item-color-box">Kraft</div>
+                        <span class="item-title">Kraft paper</span>
+                        <span class="item-price">Free</span>
+                    </div>
+                    <div class="item-card" id="card-cream" data-choice-group="wrapping" data-option-id="cream" data-price="60" role="button" tabindex="0" aria-pressed="false">
+                        <div class="item-color-box">Cream</div>
+                        <span class="item-title">Cream tissue</span>
+                        <span class="item-price">₱60</span>
+                    </div>
+                    <div class="item-card" id="card-champagne" data-choice-group="wrapping" data-option-id="champagne" data-price="70" role="button" tabindex="0" aria-pressed="false">
+                        <div class="item-color-box">Champagne</div>
+                        <span class="item-title">Champagne</span>
+                        <span class="item-price">₱70</span>
+                    </div>
+                    <div class="item-card" id="card-black" data-choice-group="wrapping" data-option-id="black" data-price="80" role="button" tabindex="0" aria-pressed="false">
+                        <div class="item-color-box">Black</div>
+                        <span class="item-title">Black matte</span>
+                        <span class="item-price">₱80</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 04 RIBBON STYLE -->
+            <div class="option-group">
+                <div class="option-header">
+                    <span class="option-label">04 Ribbon style</span>
+                </div>
+                <div class="items-grid">
+                    <div class="item-card" id="card-gold" data-choice-group="ribbon" data-option-id="gold" data-price="40" role="button" tabindex="0" aria-pressed="false">
+                        <div class="item-color-box">Gold</div>
+                        <span class="item-title">Gold</span>
+                        <span class="item-price">₱40</span>
+                    </div>
+                    <div class="item-card" id="card-blush" data-choice-group="ribbon" data-option-id="blush" data-price="40" role="button" tabindex="0" aria-pressed="false">
+                        <div class="item-color-box">Blush</div>
+                        <span class="item-title">Blush</span>
+                        <span class="item-price">₱40</span>
+                    </div>
+                    <div class="item-card" id="card-ivory" data-choice-group="ribbon" data-option-id="ivory" data-price="40" role="button" tabindex="0" aria-pressed="false">
+                        <div class="item-color-box">Ivory</div>
+                        <span class="item-title">Ivory</span>
+                        <span class="item-price">₱40</span>
+                    </div>
+                    <div class="item-card" id="card-espresso" data-choice-group="ribbon" data-option-id="espresso" data-price="40" role="button" tabindex="0" aria-pressed="false">
+                        <div class="item-color-box">Espresso</div>
+                        <span class="item-title">Espresso</span>
+                        <span class="item-price">₱40</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 05 DECORATIONS -->
+            <div class="option-group">
+                <div class="option-header">
+                    <span class="option-label">05 Decorations</span>
+                </div>
+                <div class="items-grid">
+                    <div class="item-card" id="decor-card" data-albora-event-id="bouquet-studio-event-4" data-albora-event-type="click">
+                        <span class="check albora-inline-031b5a1f8cf1">✓</span>
+                        <div class="item-image-box"><div class="item-image-placeholder">IMAGE PLACEHOLDER</div></div>
+                        <span class="item-title">Handwritten card</span>
+                        <span class="item-price">+₱30</span>
+                    </div>
+                    <div class="item-card" id="decor-vase" data-albora-event-id="bouquet-studio-event-3" data-albora-event-type="click">
+                        <span class="check albora-inline-031b5a1f8cf1">✓</span>
+                        <div class="item-image-box"><div class="item-image-placeholder">IMAGE PLACEHOLDER</div></div>
+                        <span class="item-title">Glass vase</span>
+                        <span class="item-price">+₱350</span>
+                    </div>
+                    <div class="item-card" id="decor-dried" data-albora-event-id="bouquet-studio-event-2" data-albora-event-type="click">
+                        <span class="check albora-inline-031b5a1f8cf1">✓</span>
+                        <div class="item-image-box"><div class="item-image-placeholder">IMAGE PLACEHOLDER</div></div>
+                        <span class="item-title">Dried flowers & letter</span>
+                        <span class="item-price">+₱80</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- STICKY BOTTOM CHECKOUT -->
+    <div class="sticky-checkout">
+        <div class="price-display">
+            <p>Total Price</p>
+            <h2 id="total-price">₱0.00</h2>
+        </div>
+      <button class="add-to-cart-btn" data-albora-event-id="bouquet-studio-event-1" data-albora-event-type="click">
+    Add to Cart
+</button>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="inline-events.js"></script>
+    <script src="bouquet-studio.js"></script>
+
+</body>
+</html>

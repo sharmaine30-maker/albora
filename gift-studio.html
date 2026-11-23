@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albora Gift Studio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="gift-studio.css">
+</head>
+
+<body>
+
+    <!-- TOP NAVIGATION -->
+    <nav class="top-nav">
+        <div class="nav-links">
+            <span>Perfume</span> ·
+            <span>Jewelry</span> ·
+            <span>Cosmetics</span> ·
+            <span>Accessories</span> ·
+            <span>Gift Studio</span>
+        </div>
+
+        <button class="close-btn" data-albora-event-id="gift-studio-event-1" data-albora-event-type="click">×</button>
+    </nav>
+
+    <!-- MAIN GRID -->
+    <main class="main-grid">
+
+        <!-- LEFT PANEL -->
+        <section class="panel left-panel">
+
+            <h2>Choose your gifts</h2>
+            <p class="subtitle">Tap a product to add it to your gift set.</p>
+
+            <div class="category-row">
+
+                <button class="cat-btn active" id="cat-perfume">
+                    Perfume
+                </button>
+
+                <button class="cat-btn" id="cat-jewelry">
+                    Jewelry
+                </button>
+
+                <button class="cat-btn" id="cat-cosmetics">
+                    Cosmetics
+                </button>
+
+                <button class="cat-btn" id="cat-accessories">
+                    Accessories
+                </button>
+
+            </div>
+
+            <input type="text" id="searchInput" placeholder="Search perfume..." class="search-bar">
+
+            <!-- JEWELRY FILTERS -->
+            <div id="jewelry-filter-wrapper" class="albora-inline-d0466aa33fa8">
+
+                <button class="btn btn-outline-warning w-100 mb-3 d-flex justify-content-center align-items-center gap-2 albora-inline-111446f04bdf"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#jewelry-filter-panel"
+                    aria-expanded="false"
+                    aria-controls="jewelry-filter-panel"
+                   >
+
+                    FILTERS
+                </button>
+
+                <div class="collapse" id="jewelry-filter-panel">
+                    <div class="jewelry-filter-panel p-3">
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-muted small">Refine by:</span>
+                            <button class="btn btn-sm btn-link text-warning p-0 text-decoration-none albora-inline-c42f23b8ec8e" id="clear-jewelry-filters">Clear All</button>
+                        </div>
+
+                        <div class="filter-group mb-3">
+                            <h6 class="filter-group-title">SHOP FOR</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button class="btn btn-sm jewelry-filter-btn active" data-filter="shopfor" data-value="all">All</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="shopfor" data-value="women">Women</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="shopfor" data-value="men">Men</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="shopfor" data-value="unisex">Unisex</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-group mb-3">
+                            <h6 class="filter-group-title">JEWELRY TYPE</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button class="btn btn-sm jewelry-filter-btn active" data-filter="type" data-value="all">All</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="type" data-value="earrings">Earrings</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="type" data-value="necklace">Necklace</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="type" data-value="pendants">Pendants</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="type" data-value="bracelet">Bracelet</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="type" data-value="ring">Ring</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="type" data-value="body-piercing">Body Piercing</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="type" data-value="waist-necklace">Waist Necklace</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="type" data-value="anklet">Anklet</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="type" data-value="armlet">Armlet</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="type" data-value="crown">Crown</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="type" data-value="jewelry-set">Jewelry Set</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-group mb-2">
+                            <h6 class="filter-group-title">METAL</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button class="btn btn-sm jewelry-filter-btn active" data-filter="metal" data-value="all">All</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="metal" data-value="gold">Gold</button>
+                                <button class="btn btn-sm jewelry-filter-btn" data-filter="metal" data-value="silver">Silver</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- STANDARD FILTERS -->
+            <div class="filter-row" id="standard-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="women">Women</button>
+                <button class="filter-btn" data-filter="men">Men</button>
+                <button class="filter-btn" data-filter="unisex">Unisex</button>
+            </div>
+
+            <!-- PRODUCT GRID -->
+            <div class="product-grid" id="productGrid"></div>
+
+        </section>
+
+        <!-- CENTER PANEL -->
+        <section class="panel center-panel">
+
+            <div class="gift-preview-arch">
+
+                <div class="gift-graphic-area">
+                    <div id="gift-graphic" class="gift-display gift-bag-default">
+                        <div class="bag-label">
+                            <h1>Albora</h1>
+                            <p>Just for you</p>
+                            <br>
+                            <p class="albora-inline-345374713bfd">Shine Like The Aurora</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="canvas-footer">
+                <p class="drop-text">Your custom gift set</p>
+                <h3 id="canvas-title">ALBORÁ GIFT BAG</h3>
+            </div>
+
+        </section>
+
+        <!-- RIGHT PANEL -->
+        <section class="panel right-panel">
+
+            <h3>Packaging</h3>
+
+            <div class="packaging-options">
+
+                <div class="pack-option active"
+                    data-type="bag"
+                    data-price="25"
+                    data-title="ALBORÁ GIFT BAG"
+                    data-desc="A ribbon-tied gift bag for her, ready to give. Size: 12 × 5.7 × 0.16.">
+
+                    <h4>Gift Bag</h4>
+                    <div class="price">₱25</div>
+                    <small>12 × 5.7 × 0.16</small>
+                </div>
+
+                <div class="pack-option"
+                    data-type="men"
+                    data-price="25"
+                    data-title="ALBORÁ MEN GIFT BAG"
+                    data-desc="A dark, minimal gift bag for him, ready to give. Size: 12 × 5.7 × 0.16.">
+
+                    <h4>Men Gift Bag</h4>
+                    <div class="price">₱25</div>
+                    <small>12 × 5.7 × 0.16</small>
+                </div>
+
+                <div class="pack-option"
+                    data-type="box"
+                    data-price="190"
+                    data-title="ALBORÁ EXCLUSIVE GIFT BOX"
+                    data-desc="Scented ribbon box with tissue filler, dried flower card and letter. Size: 25 × 20 × 7.">
+
+                    <h4>Exclusive Box</h4>
+                    <div class="price">₱190</div>
+                    <small>25 × 20 × 7</small>
+                </div>
+
+            </div>
+
+            <p class="pack-desc" id="pack-desc-text">
+                A ribbon-tied gift bag for her, ready to give. Size: 12 × 5.7 × 0.16.
+            </p>
+
+            <h3>Optional add-on</h3>
+
+            <div class="addon-card" id="addonCard">
+
+                <div class="css-addon-img">
+                    <div class="css-flower"></div>
+                    <div class="css-flower"></div>
+                    <div class="css-flower"></div>
+                    <div class="css-envelope"></div>
+                </div>
+
+                <div class="addon-details">
+                    <p>Dry Flower with Envelope &amp; Letter</p>
+                    <span class="addon-price">+₱30</span>
+                </div>
+
+            </div>
+
+          
+<div class="summary-section">
+
+    <h3>Your Gift Set</h3>
+
+    <!-- SELECTED PRODUCTS FIRST -->
+    <div id="summary-items-list">
+        <p class="albora-inline-3c77036deb3d">
+            No products added yet.
+        </p>
+    </div>
+
+    <!-- PERFUME SIZE AND OPTIONAL BOX AT THE BOTTOM -->
+    <div class="perfume-size-settings">
+
+        <label for="perfumeSize">Perfume Size</label>
+
+        <select id="perfumeSize" class="perfume-size-select">
+            <option value="10ml">10 ml</option>
+            <option value="30ml" selected>30 ml - FREE</option>
+            <option value="50ml">50 ml - FREE</option>
+        </select>
+
+        <small class="size-note">
+            The selected size will apply to all perfumes in your gift set.
+        </small>
+
+        <!-- OPTIONAL 10 ML BOX -->
+        <label class="box-checkbox-row" for="add10mlBox">
+            <input type="checkbox" id="add10mlBox">
+            <span class="box-checkbox-label">Add 10 ml Box</span>
+            <span class="box-checkbox-price">+₱15</span>
+        </label>
+
+    </div>
+
+    <!-- PRICE SUMMARY -->
+    <div class="summary-row">
+        <span>Packaging</span>
+        <span id="summary-packaging-price">₱25</span>
+    </div>
+
+    <div class="summary-row albora-inline-d0466aa33fa8" id="summary-box-row">
+        <span>10 ml Box</span>
+        <span>₱15</span>
+    </div>
+
+    <div class="summary-row albora-inline-d0466aa33fa8" id="summary-addon-row">
+        <span>Add-on (Flower)</span>
+        <span>₱30</span>
+    </div>
+
+    <div class="summary-row total">
+        <span>Total price</span>
+        <span id="summary-total-price">₱25</span>
+    </div>
+
+</div>
+
+
+        </section>
+
+    </main>
+
+    <!-- BOTTOM BAR -->
+    <footer class="bottom-bar">
+
+        <div class="footer-left">
+            <div>
+                <h3>Albora Gift Studio</h3>
+                <p>A gift set, made by you</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+
+            <div class="total-price-wrapper">
+                <small>Total</small>
+                <h2 id="footer-total-price">₱25</h2>
+            </div>
+
+            <button class="add-to-bag-btn" id="addToBagBtn">
+                ADD TO BAG
+            </button>
+
+        </div>
+
+    </footer>
+
+    <div class="toast-msg" id="toastMsg">Message</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="inline-events.js"></script>
+    <script src="gift-studio.js"></script>
+
+</body>
+</html>

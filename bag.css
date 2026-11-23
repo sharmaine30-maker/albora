@@ -1,0 +1,112 @@
+
+        :root {
+            --nav-bg: #191613;
+            --text-light: #E8DECB;
+            --gold: #C5A253;
+            --section-bg: #0F0D0B;
+            --border: #3D3733;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--section-bg);
+            color: var(--text-light);
+            font-family: 'Jost', sans-serif;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background: var(--nav-bg);
+            border-bottom: 1px solid var(--border);
+        }
+        .header h1 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 22px;
+            font-weight: 400;
+        }
+        .close-btn {
+            background: none; border: none; color: var(--text-light);
+            font-size: 22px; cursor: pointer; text-decoration: none;
+        }
+        .cart-container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        .cart-title { font-family: 'Bodoni Moda', serif; font-size: 32px; margin-bottom: 20px; }
+        
+        .cart-item {
+            display: flex; align-items: center; gap: 20px;
+            padding: 20px; border: 1px solid var(--border);
+            border-radius: 8px; margin-bottom: 15px;
+            background: rgba(255,255,255,0.02);
+        }
+        .cart-item-art {
+            width: 80px; height: 100px;
+            background: linear-gradient(180deg, #3D3620 0%, #2A2516 100%);
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 6px; flex-shrink: 0;
+        }
+        .cart-item-art svg { width: 50px; height: 60px; }
+        .cart-item-info { flex: 1; }
+        .cart-item-info h3 { font-size: 15px; font-weight: 500; margin-bottom: 5px; }
+        .cart-item-cat { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold); margin-bottom: 8px; }
+        .cart-customization { margin: 3px 0; color: #A0988A; font-size: 11px; }
+        .cart-charge { color: var(--gold); }
+        .cart-item-price { font-size: 15px; color: var(--text-light); }
+        
+        .cart-qty { display: flex; align-items: center; gap: 10px; }
+        .cart-qty button {
+            width: 28px; height: 28px; background: transparent; border: 1px solid var(--border);
+            color: var(--text-light); border-radius: 50%; cursor: pointer; font-size: 14px;
+        }
+        .cart-qty button:hover { border-color: var(--gold); color: var(--gold); }
+        .remove-btn { background: none; border: none; color: #888; font-size: 18px; cursor: pointer; padding: 5px; }
+        .remove-btn:hover { color: #d9534f; }
+
+        .cart-summary {
+            margin-top: 30px; padding: 25px; border: 1px solid var(--border);
+            border-radius: 8px; background: rgba(255,255,255,0.02);
+        }
+        .summary-row {
+            display: flex; justify-content: space-between; margin-bottom: 12px;
+            font-size: 14px; color: #A0988A;
+        }
+        .summary-row.total {
+            border-top: 1px solid var(--border); padding-top: 15px; margin-top: 15px;
+            font-size: 20px; color: var(--gold); font-weight: 500;
+        }
+        .checkout-btn {
+            width: 100%; margin-top: 20px; background: var(--gold); color: var(--nav-bg);
+            border: none; padding: 16px; font-size: 12px; text-transform: uppercase;
+            letter-spacing: 2px; font-weight: 500; cursor: pointer; border-radius: 4px;
+        }
+        .checkout-btn:hover { background: #a98b3f; }
+        .empty-cart-link { color: var(--gold); }
+        @media (max-width: 600px) {
+            .cart-item { flex-wrap: wrap; }
+            .cart-item-info { flex: 1 1 100%; }
+        }
+        /* ALBORÁ DATABASE-READY CONTENT PLACEHOLDER */
+        .cart-item-art {
+            background: #26231E !important;
+            border: 1px dashed #C5A253 !important;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+        .cart-item-art > * { display: none !important; }
+        .cart-item-art::after {
+            content: "IMAGE PLACEHOLDER";
+            color: #C5A253;
+            font-family: 'Jost', sans-serif;
+            font-size: 8px;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+
+html body .albora-inline-1857452b483b {
+    text-align:center;
+    padding:40px;
+    color:#888;
+    
+}

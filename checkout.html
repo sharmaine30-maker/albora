@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alborá - Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Checkout</h1>
+        <a href="bag.html" class="close-btn">✖</a> <!-- Babalik sa bag.html -->
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="checkout-container">
+        
+        <!-- LEFT COLUMN: FORMS -->
+        <div class="form-column">
+            <span class="step-title">STEP 1 OF 2 · PAY FOR YOUR PRODUCTS</span>
+            
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="input-group">
+                <label class="input-label">Full Name</label>
+                <input type="text" class="form-input checkout-required" id="checkoutName" required autocomplete="name">
+            </div>
+            
+            <div class="input-row">
+                <div class="input-group">
+                    <label class="input-label">Mobile Number</label>
+                    <input type="tel" class="form-input checkout-required" id="checkoutMobile" placeholder="09XX XXX XXXX" required autocomplete="tel">
+                </div>
+                <div class="input-group">
+                    <label class="input-label">Messenger, Instagram, or TikTok</label>
+                    <input type="text" class="form-input checkout-required" id="checkoutMessenger" required>
+                </div>
+            </div>
+
+            <h2 class="section-title albora-inline-8914d26e8fd8">Delivery address</h2>
+            
+            <div class="input-group">
+                <label class="input-label">House No., Street</label>
+                <input type="text" class="form-input checkout-required" id="checkoutStreet" required autocomplete="address-line1">
+            </div>
+            
+            <div class="input-row">
+                <div class="input-group">
+                    <label class="input-label">Barangay</label>
+                    <input type="text" class="form-input checkout-required" id="checkoutBarangay" required>
+                </div>
+                <div class="input-group">
+                    <label class="input-label">City / Municipality</label>
+                    <input type="text" class="form-input checkout-required" id="checkoutCity" required autocomplete="address-level2">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label class="input-label">Province</label>
+                    <input type="text" class="form-input checkout-required" id="checkoutProvince" required autocomplete="address-level1">
+                </div>
+                <div class="input-group">
+                    <label class="input-label">Postal Code</label>
+                    <input type="text" class="form-input checkout-required" id="checkoutPostalCode" required autocomplete="postal-code">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label class="input-label">Note to Rider (Optional)</label>
+                <input type="text" class="form-input" id="checkoutRiderNote" placeholder="Landmark, gate color, etc.">
+            </div>
+
+            <h2 class="section-title albora-inline-8914d26e8fd8">Pay for your products</h2>
+
+            <!-- PAYMENT OPTION 1 -->
+            <label class="payment-option active" data-albora-event-id="checkout-event-3" data-albora-event-type="click">
+                <input type="radio" name="payment" value="gcash" checked>
+                <div class="payment-details">
+                    <div class="payment-name">GCash</div>
+                    <div class="payment-desc">Payment method selection only; no payment is processed by this prototype.</div>
+                </div>
+            </label>
+
+            <!-- PAYMENT OPTION 2 -->
+            <label class="payment-option" data-albora-event-id="checkout-event-2" data-albora-event-type="click">
+                <input type="radio" name="payment" value="maribank">
+                <div class="payment-details">
+                    <div class="payment-name">Maribank</div>
+                    <div class="payment-desc">Payment method selection only; no payment is processed by this prototype.</div>
+                </div>
+            </label>
+
+            <!-- QR CODE CONTAINER -->
+            <div class="qr-container">
+                <div class="qr-box" id="qrBox">
+                    Payment QR unavailable
+                </div>
+                <div class="qr-info">
+                    <small id="qrLabel" class="albora-inline-0ea663c0a2bf">SCAN TO PAY WITH GCASH</small>
+                    <h3 id="qrTotalAmount">₱1,060</h3>
+                    <p>This frontend-only prototype does not provide a payment QR code or accept payment.</p>
+                </div>
+            </div>
+
+            <!-- UPLOAD PROOF -->
+            <div class="input-group albora-inline-203322639169">
+                <label class="input-label">Payment Reference No. (Optional)</label>
+                    <input type="text" class="form-input" id="paymentReferenceNo" placeholder="From your payment receipt">
+            </div>
+            
+            <div class="input-group">
+                <label class="input-label">Proof of Payment (not submitted in this prototype)</label>
+                <input type="file" class="form-input albora-inline-c7aa49fe8499">
+            </div>
+
+            <div class="albora-inline-7b87d488cde6">
+                This frontend-only prototype does not process payments or transmit uploaded proof. Shipping is not included; its J&amp;T Express fee is added after payment verification.
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: SUMMARY -->
+        <div class="summary-column">
+            <h2 class="summary-title">Order summary</h2>
+            
+            <div id="checkoutItems">
+                <!-- Items dito ilalagay ng JS -->
+            </div>
+
+            <div class="summary-totals">
+                <div class="summary-row">
+                    <span>Product subtotal</span>
+                    <span id="checkoutSubtotal">₱0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping (J&T Express)</span>
+                    <span>Added later</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Pay now</span>
+                    <span id="checkoutTotal">₱0</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM BUTTON -->
+    <button class="sticky-bottom" data-albora-event-id="checkout-event-1" data-albora-event-type="click">
+        PLACE ORDER · <span id="btnTotal">₱0</span>
+    </button>
+    <div class="prototype-note">Prototype: no real payment is taken. Orders are saved in this browser only.</div>
+
+    <!-- JAVASCRIPT -->
+    <script src="inline-events.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>

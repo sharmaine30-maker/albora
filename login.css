@@ -1,0 +1,190 @@
+
+        :root {
+            --nav-bg: #191613;
+            --text-light: #E8DECB;
+            --gold: #C5A253;
+            --section-bg: #0F0D0B;
+            --border: #3D3733;
+            --input-bg: #1A1614;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--section-bg);
+            color: var(--text-light);
+            font-family: 'Jost', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-image: radial-gradient(circle at 50% 0%, #2a2015 0%, var(--section-bg) 70%);
+        }
+
+        /* --- HEADER / LOGO --- */
+        .header-logo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header-logo img {
+            height: 40px; /* Adjust mo na lang kung gaano kalaki gusto mo */
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .header-logo h1 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        /* --- CONTAINER --- */
+        .auth-container {
+            width: 100%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            padding: 40px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* --- FORMS --- */
+        .auth-form {
+            display: none; /* Nakatago lahat by default */
+            animation: fadeIn 0.4s ease-in-out;
+        }
+        .auth-form.active {
+            display: block; /* Ipapakita lang kung active */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .form-title {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .form-subtitle {
+            font-size: 12px;
+            color: #A0988A;
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        /* --- INPUTS --- */
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .input-label {
+            display: block;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #9E9585;
+            margin-bottom: 8px;
+        }
+        .form-input {
+            width: 100%;
+            background: var(--input-bg);
+            border: 1px solid var(--border);
+            color: var(--text-light);
+            padding: 14px 15px;
+            font-size: 14px;
+            font-family: 'Jost', sans-serif;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .form-input:focus {
+            border-color: var(--gold);
+        }
+
+        /* --- BUTTONS --- */
+        .btn-primary {
+            width: 100%;
+            background: var(--gold);
+            color: var(--nav-bg);
+            border: none;
+            padding: 16px;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+        .btn-primary:hover {
+            background: #a98b3f;
+        }
+
+        /* --- LINKS --- */
+        .form-links {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #A0988A;
+        }
+        .form-links a {
+            color: var(--gold);
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .form-links a:hover {
+            text-decoration: underline;
+        }
+        .divider {
+            margin: 0 10px;
+            color: var(--border);
+        }
+
+        /* --- ERROR MESSAGES --- */
+        .error-msg {
+            color: #ff6b6b;
+            font-size: 11px;
+            margin-top: 5px;
+            display: none;
+        }
+        .form-input.invalid {
+            border-color: #ff6b6b;
+        }
+            /* --- CLOSE BUTTON --- */
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 24px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.3s;
+            z-index: 100;
+        }
+        .close-btn:hover {
+            color: var(--gold);
+        }
+
+html body .albora-inline-76927be05116 {
+    font-size:10px;
+    color:#A0988A;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-top:5px;
+    
+}
+
+html body #fallbackLogo.albora-inline-d0466aa33fa8 {
+    display:none;
+    
+}
